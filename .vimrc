@@ -13,10 +13,14 @@ set autoindent
 " Note the following lines must be added to .bashrc to turn off
 " the existing binding to freeze the terminal:
 "     bind -r '\C-s'
+"     bind -r '\C-q'
 "     stty -ixon
 noremap  <C-s> :update<CR>
 vnoremap <C-s> <C-C>:update<CR>
 inoremap <C-s> <C-O>:update<CR>
+noremap  <C-q> :wq<CR>
+vnoremap <C-q> <C-C>:wq<CR>
+inoremap <C-q> <C-O>:wq<CR>
 
 " Auto closing quotes and brackets
 inoremap " ""<left>
