@@ -11,7 +11,7 @@ set autoindent
 
 " Ctrl-s saves (updates) the file
 " Note the following lines must be added to .bashrc to turn off
-" the existing binding:
+" the existing binding to freeze the terminal:
 "     bind -r '\C-s'
 "     stty -ixon
 noremap  <C-s> :update<CR>
