@@ -9,18 +9,16 @@ set expandtab
 " Newline will copy the current indent
 set autoindent
 
-" Ctrl-s saves (updates) the file
-" Note the following lines must be added to .bashrc to turn off
-" the existing binding to freeze the terminal:
-"     bind -r '\C-s'
-"     bind -r '\C-q'
-"     stty -ixon
+" Ctrl-s saves the file
+" Ctrl-q saves and exits
 noremap  <C-s> :update<CR>
 vnoremap <C-s> <C-C>:update<CR>
 inoremap <C-s> <C-O>:update<CR>
 noremap  <C-q> :wq<CR>
 vnoremap <C-q> <C-C>:wq<CR>
 inoremap <C-q> <C-O>:wq<CR>
+" Note the following line must be added to .bashrc for the bindings to work
+"     stty -ixon
 
 " Auto closing quotes and brackets
 inoremap " ""<left>
