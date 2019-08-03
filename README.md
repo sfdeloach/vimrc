@@ -27,6 +27,7 @@ Simple vimrc file designed to my liking
 `d` delete  
 `c` change  
 `p` put  
+`x` delete one char  
 `r` replace one char  
 `y` yank  
 `<` outdent  
