@@ -42,10 +42,18 @@ inoremap {<CR> {<CR>}<Esc>ko<tab>
 " Turn on syntax highlighting
 syntax on
 
+" To perform a color test, run the following command:
+"   $ :runtime syntax/colortest.vim
+
 " Show line numbers and set color
 set number
-highlight LineNr ctermfg=238
+highlight LineNr ctermfg=darkmagenta
 
-" Controls the textcolumn size and visibility
-let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=238
+" Sets a range for the column width
+" let &colorcolumn=join(range(101,999),",")
+" highlight ColorColumn ctermbg=darkmagenta
+
+" Set color column
+highlight ColorColumn ctermbg=darkgray
+set colorcolumn=101
+
