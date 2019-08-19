@@ -1,5 +1,5 @@
 # vimrc
-Simple `.vimrc` file designed to my liking
+Simple `.vimrc` file and reference sheet
 
 ## Settings include
 - UTF-8 encoding
