@@ -6,6 +6,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Wrap long lines, break at complete words
+set wrap linebreak nolist
+
 " Newline will copy the current indent
 set autoindent
 
