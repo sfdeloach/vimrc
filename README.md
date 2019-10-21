@@ -8,6 +8,7 @@ Simple `.vimrc` file and reference sheet
 - Ctrl-S saves the file (.bashrc must be configured)
 - Auto closing of quotes and brackets
 - Line numbers and textcolumn set at 80
+- Long lines break at complete words
 
 ## cheat sheet
 
