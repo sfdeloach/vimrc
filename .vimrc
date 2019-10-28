@@ -19,8 +19,8 @@ filetype plugin indent on
 set encoding=utf-8
 
 " All tabs as three spaces
-set tabstop=4
-set shiftwidth=4
+set tabstop=3
+set shiftwidth=3
 set expandtab
 
 " Set the maximum allowed width of a line
