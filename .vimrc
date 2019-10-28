@@ -1,7 +1,22 @@
+" Setup commands for Vundle (https://vimawesome.com/plugin/vim-autoformat)
+" run :PluginInstall to install Vundle
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'   " Required by Vundle
+Plugin 'chiel92/vim-autoformat' " https://vimawesome.com/plugin/vim-autoformat
+
+call vundle#end()
+filetype plugin indent on
+" End of Vundle setup
+
 " Encoding
 set encoding=utf-8
 
-" All tabs as four spaces
+" All tabs as three spaces
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -23,9 +38,7 @@ inoremap <C-q> <C-O>:wq<CR>
 " Note the following line must be added to .bashrc for the bindings to work
 "     stty -ixon
 
-" Auto closing quotes and brackets
-inoremap " ""<left>
-inoremap ' ''<left>
+" Auto closing brackets
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
@@ -35,9 +48,12 @@ function! IsCharacter(...)
     let l:char = getline('.')[col('.') - 1]
     return l:char == a:1 
 endfunction
+
 inoremap <expr> ) IsCharacter(")") ? "<right>" : ")"
 inoremap <expr> ] IsCharacter("]") ? "<right>" : "]"
 inoremap <expr> } IsCharacter("}") ? "<right>" : "}"
+inoremap <expr> " IsCharacter("\"") ? "<right>" : "\"\"<left>"
+inoremap <expr> ' IsCharacter("'") ? "<right>" : "''<left>"
 
 " Curly bracket return creates body
 inoremap {<CR> {<CR>}<Esc>ko<tab>
@@ -50,13 +66,12 @@ syntax on
 
 " Show line numbers and set color
 set number
-highlight LineNr ctermfg=darkmagenta
+highlight LineNr ctermfg=238
 
 " Sets a range for the column width
 " let &colorcolumn=join(range(101,999),",")
-" highlight ColorColumn ctermbg=darkmagenta
+" highlight ColorColumn ctermbg=238
 
 " Set color column
-highlight ColorColumn ctermbg=darkgray
+highlight ColorColumn ctermbg=238j
 set colorcolumn=101
-
