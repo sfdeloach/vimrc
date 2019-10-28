@@ -43,16 +43,20 @@ Simple `.vimrc` file and reference sheet
 `e` end of next word  
 `b` start of last word  
 `0` start of line  
-`$` end of line  
+`$` end of line
+
+`<C-u>` page up
+`<C-d>` page down
+
 `gg` start of file  
 `G` end of file  
 
 ### search & replace
 `f{char}` find char in line  
 `;` repeat last f{char} motion  
-`*` search for word nearest cursor  
+`*` search for word nearest cursor
+`:/foo` search file for 'foo'
 `n` find next occurrence   
-`:/foo` search file for 'foo'  
 `:%s/old/new` change every occurrence of 'old' to 'new'  
 
 ### file management
