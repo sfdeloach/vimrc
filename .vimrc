@@ -13,6 +13,8 @@ call vundle#end()
 filetype plugin indent on
 " End of Vundle setup
 
+" let g:autoformat_verbosemode=1 " useful for debugging autoformat
+
 " Encoding
 set encoding=utf-8
 
@@ -20,6 +22,9 @@ set encoding=utf-8
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Set the maximum allowed width of a line
+set tw=100
 
 " Wrap long lines, break at complete words
 set wrap linebreak nolist
@@ -68,10 +73,10 @@ syntax on
 set number
 highlight LineNr ctermfg=238
 
-" Sets a range for the column width
+" Shade the region beyond column 100
 " let &colorcolumn=join(range(101,999),",")
 " highlight ColorColumn ctermbg=238
 
 " Set color column
-highlight ColorColumn ctermbg=238j
+highlight ColorColumn ctermbg=238
 set colorcolumn=101
