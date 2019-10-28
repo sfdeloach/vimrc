@@ -43,11 +43,9 @@ Simple `.vimrc` file and reference sheet
 `e` end of next word  
 `b` start of last word  
 `0` start of line  
-`$` end of line
-
-`<C-u>` page up
-`<C-d>` page down
-
+`$` end of line  
+`<C-u>` page up  
+`<C-d>` page down  
 `gg` start of file  
 `G` end of file  
 
