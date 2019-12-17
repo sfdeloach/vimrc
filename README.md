@@ -56,6 +56,7 @@ Simple `.vimrc` file and reference sheet
 `:/foo` search file for 'foo'
 `n` find next occurrence   
 `:%s/old/new` change every occurrence of 'old' to 'new'  
+`:%s/^M//g` where ^M is entered by holding down Ctrl and typing v followed by m, replaces all carriage return characters  
 
 ### file management
 `:q!` quit without saving  
